@@ -1,11 +1,14 @@
-import { CadastroCliente } from "./pages/cadastro-cliente"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Login } from "./pages/login";
+import { CadastroCliente } from "./pages/cadastro-cliente";
 
-function App() {
+export default function App() {
   return (
-    <>
-      <CadastroCliente />
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/cadastro-cliente" element={<CadastroCliente />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
-
-export default App

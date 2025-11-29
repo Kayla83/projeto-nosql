@@ -1,0 +1,68 @@
+body {
+    background-color: #bfd1d9;
+    font-family: "Georgia", serif;
+}
+
+.centro {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    width: 450px;
+    margin: 120px auto;
+    padding: 40px 50px;
+    border-radius: 15px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.centro h2 {
+    text-align: center;
+    color: #025e73;
+    margin-bottom: 35px;
+    font-size: 26px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #003f52;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #b3c6cc;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #025e73;
+    box-shadow: 0 0 5px rgba(2, 94, 115, 0.4);
+}
+
+/* Novo botão */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #025e73;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #014d5e;
+}
