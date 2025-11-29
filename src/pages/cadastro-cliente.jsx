@@ -1,6 +1,9 @@
 import "../style/cadastro-cliente.css"
-
+import { useNavigate } from "react-router-dom"; 
 export const CadastroCliente = () => {
+
+    const navigate = useNavigate();
+    
   return (
     <div className="centro">
       <h2>Cadastro Cliente</h2>
@@ -35,7 +38,9 @@ export const CadastroCliente = () => {
         />
       </div>
       
-      <button className="btn">Cadastrar</button>
+      <button type="button" onClick={() => navigate("/calendario")} className="btn">
+          Entrar
+        </button>
     </div>
   )
 }

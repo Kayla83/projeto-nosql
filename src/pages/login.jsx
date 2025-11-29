@@ -1,5 +1,5 @@
 import "../style/login.css";
-import logo from "../assets/logo-cavalo.png";
+import logo from "../assets/logo-cavalo-removebg-preview.png";
 import { useNavigate } from "react-router-dom";
 
 export const Login = () => {
@@ -20,12 +20,18 @@ export const Login = () => {
         </div>
 
         <br />
-        <button>Entrar</button>
+        {/* Botão agora leva para o calendário */}
+        <button type="button" onClick={() => navigate("/calendario")}>
+          Entrar
+        </button>
 
         <div className="signup-link">
           <p>
             Não tem uma conta?{" "}
-            <a onClick={() => navigate("/cadastro-cliente")} style={{ cursor: "pointer" }}>
+            <a
+              onClick={() => navigate("/cadastro-cliente")}
+              style={{ cursor: "pointer" }}
+            >
               Registrar
             </a>
           </p>
